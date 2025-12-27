@@ -1,0 +1,85 @@
+/* Global Styles */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f4f6;
+    /* Slightly off-white background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    /* Ensures the video is always behind the content */
+}
+
+
+/* Center the content inside the box */
+
+.box-container {
+    position: relative;
+    /* Ensure it's positioned in front of the video */
+    width: 100%;
+    max-width: 400px;
+    background-color: rgba(255, 255, 255, 0.6);
+    /* Transparent background with slight opacity */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    z-index: 10;
+    /* Place the content above the video */
+    padding: 2rem;
+}
+
+
+/* Hover effect on the box */
+
+.box-container:hover {
+    transform: scale(1.05);
+    /* Slightly increases the size */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    /* Adds a more prominent shadow */
+}
+
+
+/* Button hover effect */
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Output text styling */
+
+#output {
+    font-family: 'Arial', sans-serif;
+    color: #6b7280;
+    font-weight: 500;
+}
+
+
+/* Tailwind Utility classes for body */
+
+body {
+    background-color: #f3f4f6;
+    /* Slightly off-white background */
+}

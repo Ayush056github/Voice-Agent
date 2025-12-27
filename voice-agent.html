@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Agent</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="voiceagent.css">
+</head>
+
+<body>
+
+    <div class="video-container">
+        <video autoplay muted loop class="absolute top-0 left-0 w-full h-full object-cover z-0">
+            <source src="background.mp4" type="video/mp4" />
+        </video>
+    </div>
+
+    <div class="box-container p-8 bg-white shadow-xl rounded-lg">
+        <h1 class="text-3xl text-center font-semibold">Voice Assistant</h1>
+        <p class="text-center mt-5 text-lg">Ask "Who created You?"</p>
+        <button id="startBtn" class="mt-5 px-6 py-3 bg-blue-600 text-white rounded-md mx-auto block">Start Listening</button>
+        <div id="output" class="mt-5 text-center text-lg"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
